@@ -4,7 +4,7 @@
         <h2>Welcome to the Menu part of the site!!</h2>
     </div>
     {% for ghost in pizzas %}
-        {% if ghost.price > 2600 %}
+        {% if ghost.price < 2600 %}
             <p>Popular!!!</p>
         {% else %}
             <p>Not so popular!</p>

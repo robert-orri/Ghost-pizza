@@ -1,9 +1,9 @@
 from django.shortcuts import render
 
 pizzas = [
-    {'name': 'Margarita', 'price': '2500kr'},
-    {'name': 'Pepperoni', 'price': '2700kr'},
-    {'name': 'Hawaiian', 'price': '2600kr'}
+    {'name': 'Margarita', 'price': '2500'},
+    {'name': 'Pepperoni', 'price': '2700'},
+    {'name': 'Hawaiian', 'price': '2600'}
 
 ]
 

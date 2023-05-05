@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'ghost_pizza.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ghost-pizza-db',
+        'USER': 'ghost-pizza-db-user',
+        'PASSWORD': 'Abc.123',
+        'HOST': '34.123.249.7',
+        'PORT': '5432'
     }
 }
 

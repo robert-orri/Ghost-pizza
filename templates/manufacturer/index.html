@@ -3,5 +3,13 @@
     <div class="ghost">
     <h2>Welcome to the Offers part of the site!!</h2>
     </div>
-
+    {% for ghost in offers %}
+        {% if ghost.price < 2600 %}
+            <p>Popular!!!</p>
+        {% else %}
+            <p>Not so popular!</p>
+        {% endif %}
+        <h4>{{ ghost.name }}</h4>
+        <p>{{ ghost.price }}kr</p>
+    {% endfor %}
 {% endblock %}

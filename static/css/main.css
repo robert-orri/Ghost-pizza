@@ -1,3 +1,8 @@
 .ghost{
     border-bottom: solid 2px rgba(155, 155, 155, .5);
+    background-color: aqua;
+}
+
+.body{
+    background-color: aqua;
 }

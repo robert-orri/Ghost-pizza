@@ -9,6 +9,6 @@ offers = [
 
 # Create your views here.
 def index(request):
-    return render(request, 'ghost/index.html', context={
+    return render(request, 'manufacturer/index.html', context={
         'offers': offers
     })

@@ -1,8 +1,8 @@
 .ghost{
     border-bottom: solid 2px rgba(155, 155, 155, .5);
-    background-color: black;
+    background-color: blueviolet;
 }
-
-.body{
-    background-color: aqua;
+.manufacturer{
+    border-bottom: solid 2px rgba(155, 155, 155, .5);
+    background-color: green;
 }

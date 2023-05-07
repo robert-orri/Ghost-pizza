@@ -1,14 +1,19 @@
 .ghost{
     border-bottom: solid 2px rgba(155, 155, 155, .5);
     background-color: blueviolet;
+    text-align: left;
 }
+
 .manufacturer{
     border-bottom: solid 2px rgba(155, 155, 155, .5);
-    background-color: green;
+    background-color: blue;
+    text-align: left;
+    text-decoration-color: blue;
 }
 
 body{
     background-color: grey;
     border: 20px;
-    text-align: center;
+    text-align: -moz-center;
 }
+

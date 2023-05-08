@@ -1,3 +1,9 @@
+body {
+    background-color: teal;
+    border: 20px;
+    text-align: -moz-center;
+}
+
 .ghost{
     border-bottom: solid 2px rgba(155, 155, 155, .5);
     background-color: blueviolet;
@@ -10,8 +16,7 @@
     text-align: left;
 }
 
-body{
-    background-color: teal;
-    border: 20px;
-    text-align: -moz-center;
+.homepage {
+    border-bottom: solid 2px rgba(155, 155, 155, .5);
 }
+

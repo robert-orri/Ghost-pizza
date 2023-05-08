@@ -4,16 +4,14 @@
     text-align: left;
 }
 
-.manufacturer{
+.manufacturer {
     border-bottom: solid 2px rgba(155, 155, 155, .5);
-    background-color: blue;
+    background-color: blueviolet;
     text-align: left;
-    text-decoration-color: blue;
 }
 
 body{
-    background-color: grey;
+    background-color: teal;
     border: 20px;
     text-align: -moz-center;
 }
-

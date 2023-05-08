@@ -4,11 +4,6 @@
     <h2>Welcome to the Offers part of the site!!</h2>
     </div>
     {% for manufacturer in offers %}
-        {% if manufacturer.price < 2600 %}
-            <p>Popular!!!</p>
-        {% else %}
-            <p>Not so popular!</p>
-        {% endif %}
         <h4>{{ manufacturer.name }}</h4>
         <p>{{ manufacturer.price }}kr</p>
     {% endfor %}

@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class User(models.Model):
+class UserInfo(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     username = models.CharField(max_length=255)
@@ -13,7 +13,7 @@ class User(models.Model):
     postal_code = models.IntegerField()
 
 class UserPayment(models.Model):
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(UserInfo, on_delete=models.CASCADE)
     cvv = models.IntegerField()
     expiration_date = models.FloatField()
     number = models.IntegerField()

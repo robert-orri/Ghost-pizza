@@ -3,6 +3,4 @@ from .import views
 urlpatterns = [
     # http: //Localhost:8000/ghost
     path('', views.index, name='ghost-index'),
-
-
 ]

@@ -1,5 +1,5 @@
 body {
-    background-color: teal;
+    background-color: white;
     border: 20px;
     text-align: -moz-center;
 }
@@ -20,3 +20,8 @@ body {
     border-bottom: solid 2px rgba(155, 155, 155, .5);
 }
 
+.homepage-image {
+    width: 500px;
+    height: 500px;
+    text-align: left;
+}

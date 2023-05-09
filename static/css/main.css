@@ -1,24 +1,13 @@
+@import "sign_in.css";
+@import "offers.css";
+@import "pizzas.css";
+@import "cart.css";
 body {
     background-color: dimgrey;
     border: 20px;
     text-align: -moz-center;
 }
 
-.ghost{
-    border-bottom: solid 2px rgba(155, 155, 155, .5);
-    text-align: left;
-}
-
-.ghost-image {
-    width: 320px;
-    height: 220px;
-    text-align: center;
-}
-
-.manufacturer {
-    border-bottom: solid 2px rgba(155, 155, 155, .5);
-    text-align: left;
-}
 
 .homepage {
     border-bottom: solid 2px rgba(155, 155, 155, .5);
@@ -29,3 +18,4 @@ body {
 
     text-align: center;
 }
+

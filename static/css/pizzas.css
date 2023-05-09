@@ -1,0 +1,10 @@
+.ghost{
+    border-bottom: solid 2px rgba(155, 155, 155, .5);
+    text-align: left;
+}
+
+.ghost-image {
+    width: 320px;
+    height: 220px;
+    text-align: center;
+}

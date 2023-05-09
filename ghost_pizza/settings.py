@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'ghost.apps.GhostConfig',
     'manufacturer.apps.ManufacturerConfig',
     'homepage.apps.HomepageConfig',
+    'log_in.apps.LogInConfig',
 ]
 
 MIDDLEWARE = [

@@ -1,22 +1,22 @@
 body {
-    background-color: white;
+    background-color: dimgrey;
     border: 20px;
     text-align: -moz-center;
 }
 
 .ghost{
     border-bottom: solid 2px rgba(155, 155, 155, .5);
-    background-color: blueviolet;
     text-align: left;
 }
 
 .ghost-image {
-    width: 20rem;
+    width: 320px;
+    height: 220px;
+    text-align: center;
 }
 
 .manufacturer {
     border-bottom: solid 2px rgba(155, 155, 155, .5);
-    background-color: blueviolet;
     text-align: left;
 }
 

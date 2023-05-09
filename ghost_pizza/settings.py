@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
+from django.contrib.auth import login
+
 import ghost.apps
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -42,8 +44,7 @@ INSTALLED_APPS = [
     'ghost.apps.GhostConfig',
     'manufacturer.apps.ManufacturerConfig',
     'homepage.apps.HomepageConfig',
-    'pizzas',
-    'ingredient',
+    'log_in.apps.LogInConfig'
 ]
 
 MIDDLEWARE = [

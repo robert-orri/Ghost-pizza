@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Offer(models.Model):
@@ -7,4 +8,4 @@ class Offer(models.Model):
     description = models.CharField(max_length=255)
     price = models.FloatField()
     image = models.CharField(max_length=9999)
-    twoforone = models.BooleanField(default=False)
+

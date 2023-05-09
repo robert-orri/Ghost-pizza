@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class UserInfo(models.Model):
     first_name = models.CharField(max_length=255)
@@ -11,6 +12,7 @@ class UserInfo(models.Model):
     gender = models.CharField(max_length=255)
     phone_number = models.IntegerField()
     postal_code = models.IntegerField()
+
 
 class UserPayment(models.Model):
     user = models.ForeignKey(UserInfo, on_delete=models.CASCADE)

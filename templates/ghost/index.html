@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {% block content %}
     <h1 class="spooky">Haunted pizzas</h1>
@@ -5,8 +6,8 @@
     <div class="Pizzas">
         {% for Pizza in Pizzas %}
             {% include "ghost/single_ghost.html" with Pizza=Pizza %}
-        <h4>{{ Pizza.name }}</h4>
-        <p>{{ Pizza.price }}</p>
+
     {% endfor %}
     </div>
+
 {% endblock %}

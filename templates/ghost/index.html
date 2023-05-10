@@ -1,21 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="ghost">
-        <h2>Menu</h2>
-    </div>
-    {% for ghost in pizzas %}
-        <h4>{{ ghost.name }}</h4>
-        <p>{{ ghost.price }}kr</p>
+    <h1 class="spooky">Haunted pizzas</h1>
+    <h2>Menu</h2>
+    <div class="Pizzas">
+        {% for Pizza in Pizzas %}
+            {% include "ghost/single_ghost.html" with Pizza=Pizza %}
+        <h4>{{ Pizza.name }}</h4>
+        <p>{{ Pizza.price }}</p>
     {% endfor %}
-    <div class="block">
-
-
-
     </div>
-    <img class="ghost-image" id="ghost-order-img" src="../../static/images/ghost_pepper.jpg" alt="order image "/>
-    <img class="ghost-image" id="ghost-order-img" src="../../static/images/meat_and_cheese.jpg" alt="order image "/>
-    <img class="ghost-image" id="ghost-order-img" src="../../static/images/HAMANDTWOCHEESE_1024x1024.webp" alt="order image "/>
-    <img class="ghost-image" id="ghost-order-img" src="../../static/images/Calzone.jpg" alt="order image "/>
-    <img class="ghost-image" id="ghost-order-img" src="../../static/images/pepperoni.jpg" alt="order image "/>
-    <img class="ghost-image" id="ghost-order-img" src="../../static/images/Margarita.webp" alt="order image "/>
 {% endblock %}

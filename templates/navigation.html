@@ -16,7 +16,6 @@
       <ul class="nav navbar-nav">
         <li ><a href="{% url 'ghost-index' %}">Menu<span class="sr-only">(current)</span></a></li>
         <li><a href="{% url 'manufacturer-index' %}">Offers</a></li>
-        <li><a href="{% url 'log_in-index' %}">Log in</a></li>
         <li><a href="{% url 'cart-index' %}">Cart</a></li>
         {% if user.is_authenticated %}
             <li><a href="{% url 'logout' %}">Log out</a></li>

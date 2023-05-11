@@ -15,7 +15,8 @@
                 <tr>
                     <td>{{ cart_item.pizza.name }}</td>
                     <td>{{ cart_item.quantity }}</td>
-                    <td>${{ cart_item.pizza.price * cart_item.quantity }}</td>
+                    <td>${{ cart_item.pizza.price|floatformat:2 }}</td>
+                    <td>${{ cart_item.pizza.price|floatformat:2|float * cart_item.quantity|floatformat:2 }}</td>
                 </tr>
             {% endfor %}
         </tbody>

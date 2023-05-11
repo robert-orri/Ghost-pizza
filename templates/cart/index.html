@@ -1,7 +1,29 @@
 {% extends 'base.html' %}
-{% block content %}
-    <div class="cart">
-    <h2>Welcome to the cart You piece of shit!!</h2>
-    </div>
 
+{% block content %}
+    <h1>Cart</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Pizza</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cart_item in cart_items %}
+                <tr>
+                    <td>{{ cart_item.pizza.name }}</td>
+                    <td>{{ cart_item.quantity }}</td>
+                    <td>${{ cart_item.pizza.price * cart_item.quantity }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total:</td>
+                <td>${{ total_price }}</td>
+            </tr>
+        </tfoot>
+    </table>
 {% endblock %}

@@ -2,6 +2,12 @@
 {% extends 'base.html' %}
 {% block content %}
     <h1 class="spooky">Haunted pizzas</h1>
+    <div class="input-group">
+        <input type="search" class="form-control" id="searchbar" placeholder="Enter your search here..."/>
+        <div class="input-group-btn">
+            <button type="button" id="search-btn" class="btn btn-default">search</button>
+        </div>
+    </div>
     <h2>Menu</h2>
     <div class="Pizzas">
         {% for Pizza in Pizzas %}

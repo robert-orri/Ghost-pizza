@@ -26,4 +26,4 @@ def cart(request):
         'cart_items': cart_items,
         'total_price': total_price
     }
-    return render(request, 'cart.html', context)
+    return render(request, 'cart/index.html', context)

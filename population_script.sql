@@ -37,3 +37,9 @@ INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(5, 4);
 INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(5, 8);
 INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(5, 9);
 
+INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(6, 1);
+INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(6, 2);
+INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(6, 3);
+INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(6, 4);
+INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(6, 8);
+INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(6, 9);

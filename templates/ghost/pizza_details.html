@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="pizza-details">
+        <h1>{{ Pizza.name }}</h1>
+        <div class="pizza-image">
+            <img src="{{ Pizza.image }}" alt="{{ Pizza.name }}">
+        </div>
+        <div class="pizza-description">
+            <p>{{ Pizza.description }}</p>
+        </div>
+        <div class="pizza-price">
+            <p>Price: ${{ Pizza.price }}</p>
+        </div>
+        <div class="toppings">
+            <p>Toppings:</p>
+            <ul>
+                {% for I in Ingredients %}
+                    <li>{{ I.name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}

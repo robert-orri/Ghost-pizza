@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'homepage.apps.HomepageConfig',
     'log_in.apps.LogInConfig',
     'ingredient.apps.IngredientConfig',
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [

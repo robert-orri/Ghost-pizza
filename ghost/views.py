@@ -7,7 +7,14 @@ from django.http import JsonResponse
 def index(request):
     if 'search_filter' in request.GET:
         search_filter = request.GET['search_filter']
-        pizzas = list(Pizza.objects.filter(name__icontains=search_filter).values())
+        print("asdf")
+        pizzas = [{
+            'id': x.id,
+            'name': x.name,
+            'description': x.description,
+            'image': x.image,
+            'price': x.price,
+        } for x in Pizza.objects.filter(name__icontains=search_filter)]
         return JsonResponse({'data': pizzas})
     return render(request, 'ghost/index.html', {
         'Pizzas': Pizza.objects.all()
@@ -24,3 +31,15 @@ def get_pizza_by_id(request, id):
         'Pizza': get_object_or_404(Pizza, pk=id),
         'Ingredients':ingredients
     })
+
+def pizza_list(request):
+    pizzas = Pizza.objects.all()
+    return render(request, 'ghost/index.html', {'pizzas': pizzas})
+
+def pizza_detail(request, pizza_id):
+    pizza = get_object_or_404(Pizza, id=pizza_id)
+    return render(request, 'ghost/index.html', {'pizza': pizza})
+
+def pizza_list_by_category(request, category):
+    pizzas = Pizza.objects.filter(category=category)
+    return render(request, 'ghost/index.html', {'Pizzas': pizzas})

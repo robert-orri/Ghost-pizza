@@ -1,5 +1,5 @@
-
 {% extends 'base.html' %}
+
 {% block content %}
     <h1 class="spooky">Haunted pizzas</h1>
     <div class="input-group">
@@ -8,12 +8,22 @@
             <button type="button" id="search-btn" class="btn btn-default">search</button>
         </div>
     </div>
+
+    <h2>Filter by Category</h2>
+    <div class="btn-group" role="group" aria-label="Filter pizzas by category">
+        <a href="{% url 'pizza_list' %}" class="btn btn-default">All</a>
+        <a href="{% url 'pizza_list_by_category' 'classic' %}" class="btn btn-default">Classic</a>
+        <a href="{% url 'pizza_list_by_category' 'special' %}" class="btn btn-default">Special</a>
+        <a href="{% url 'pizza_list_by_category' 'treason' %}" class="btn btn-default">Treason</a>
+    </div>
+
     <h2>Menu</h2>
     <div class="Pizzas">
         {% for Pizza in Pizzas %}
             {% include "ghost/single_ghost.html" with Pizza=Pizza %}
-
-    {% endfor %}
+        {% empty %}
+            <p>There are no pizzas available in this category.</p>
+        {% endfor %}
     </div>
 
 {% endblock %}

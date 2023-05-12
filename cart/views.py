@@ -4,6 +4,7 @@ from .models import Cart, CartItems
 from ghost.models import Pizza
 from django import template
 
+
 # Create your views here.
 def index(request):
     return render(request, 'cart/index.html')
@@ -29,6 +30,5 @@ def cart(request):
         'total_price': total_price
     }
     return render(request, 'cart.html', context)
-
 
 

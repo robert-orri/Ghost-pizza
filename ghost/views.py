@@ -14,6 +14,7 @@ def index(request):
             'description': x.description,
             'image': x.image,
             'price': x.price,
+            'second_image': x.second_image
         } for x in Pizza.objects.filter(name__icontains=search_filter)]
         return JsonResponse({'data': pizzas})
     return render(request, 'ghost/index.html', {

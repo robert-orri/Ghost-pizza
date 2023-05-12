@@ -4,4 +4,9 @@
         <h4>{{ Pizza.name }}</h4>
         <p>{{ Pizza.price }}</p>
     </a>
+    <form method="post" action="{% url 'add_to_cart'  pizza_id=Pizza.id %}">
+        {% csrf_token %}
+        <input type="hidden" name="pizza_id" value="{{ Pizza.id }}">
+        <button type="submit" class="btn btn-primary">Add to Cart</button>
+    </form>
 </div>

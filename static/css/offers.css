@@ -1,41 +1,44 @@
 .manufacturer {
-    border-bottom: solid 2px rgba(155, 155, 155, .5);
-    text-align: left;
+  border-bottom: solid 2px rgba(155, 155, 155, .5);
+  text-align: left;
+  font-family: "Bodoni 72";
 }
 
-.offer img {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F5F5F5;
-    border: 1px solid #CCCCCC;
-    padding: 10px;
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .offer {
-    width: calc(50% - 10px);
-    height: 480px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    padding: 10px;
+  width: calc(50% - 10px);
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  padding: 10px;
+  font-family: "Bodoni 72";
+  margin-bottom: 20px;
 }
 
+.offer img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border: 1px solid #CCCCCC;
+  padding: 10px;
+}
 
-.offer h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
+.offer h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .offer h5 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
 }

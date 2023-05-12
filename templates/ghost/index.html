@@ -16,7 +16,10 @@
         <a href="{% url 'pizza_list_by_category' 'special' %}" class="btn btn-default">Special</a>
         <a href="{% url 'pizza_list_by_category' 'treason' %}" class="btn btn-default">Treason</a>
     </div>
-
+    <div>
+        <button class="btn btn-primary" id="sort-by-value-btn">Sort by Value</button>
+        <button class="btn btn-primary" id="sort-by-price-btn">Sort by Price</button>
+    </div>
     <h2>Menu</h2>
     <div class="Pizzas">
         {% for Pizza in Pizzas %}

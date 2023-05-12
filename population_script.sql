@@ -43,3 +43,10 @@ INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(6, 3);
 INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(6, 4);
 INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(6, 8);
 INSERT INTO pizzas_PizzaIngredient (pizzas_id, Ingredient_id) VALUES(6, 9);
+
+INSERT INTO ghost_Pizza(pizza_id, second_image) VALUES (1, "https://www.italymagazine.com/sites/default/files/recipe/pizza-margherita-cottura_0.jpg");
+INSERT INTO ghost_Pizza(pizza_id, second_image) VALUES (2, "https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/a78d46f6-1dbf-40e8-8144-86be8c2149fc.jpeg");
+INSERT INTO ghost_Pizza(pizza_id, second_image) VALUES (3, "https://www.chewboom.com/wp-content/uploads/2020/10/Blaze-Pizza-Introduces-New-Blazin-Hot-Chicken-Pizza-678x381.jpg");
+INSERT INTO ghost_Pizza(pizza_id, second_image) VALUES (4, "https://images.eatsmarter.com/sites/default/files/styles/max_size/public/hawaiian-pizza-532018.jpg");
+INSERT INTO ghost_Pizza(pizza_id, second_image) VALUES (5, "https://natashaskitchen.com/wp-content/uploads/2020/09/Calzones-Recipe-4.jpg");
+INSERT INTO ghost_Pizza(pizza_id, second_image) VALUES (6, "https://thefoodiepatootie.com/wp-content/uploads/2014/08/sausage-onion-cheese-pizza.png");

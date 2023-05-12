@@ -42,3 +42,29 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).ready(function(){
+    $("#search-btn").click(function(){
+        var value = $("#searchbar").val().toLowerCase();
+
+        $(".Pizzas .well-ghost").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
+    $("#sort-by-value-btn").click(function(){
+        var sortedPizzas = $(".Pizzas .well-ghost").sort(function(a, b){
+            return parseInt($(b).data("value")) - parseInt($(a).data("value"));
+        });
+
+        $(".Pizzas").empty().append(sortedPizzas);
+    });
+
+    $("#sort-by-price-btn").click(function(){
+        var sortedPizzas = $(".Pizzas .well-ghost").sort(function(a, b){
+            return parseFloat($(a).data("price")) - parseFloat($(b).data("price"));
+        });
+
+        $(".Pizzas").empty().append(sortedPizzas);
+    });
+});
